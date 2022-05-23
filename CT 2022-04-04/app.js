@@ -13,9 +13,21 @@
 //Pseudo Code: we are transforming an array(needs array transform mmethod) 
 //Make a function that takes an array
 function doubled(arr){
-    //Map through the array multiplying each element by 2
    return arr.map(element=>element*2)
 
 }
 doubled([4,5,6])
 //return the array
+
+// Your task is to sum the differences between consecutive pairs in the array in descending order.
+
+// Example
+// [2, 1, 10]  -->  9
+// In descending order: [10, 2, 1]
+
+// Sum: (10 - 2) + (2 - 1) = 8 + 1 = 9
+//If the array is empty or the array has only one element the result should be 0 (Nothing in Haskell ).
+
+//P: will it always be integer? 
+//R: returns the sum to the difference of two consecutive pairs 
+//E: given [2,3,4,6,8,9] return  (2-3)+(3-4)+(4-6)+(6-8)+(8-9)
