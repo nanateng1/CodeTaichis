@@ -30,4 +30,24 @@ doubled([4,5,6])
 
 //P: will it always be integer? 
 //R: returns the sum to the difference of two consecutive pairs 
-//E: given [2,3,4,6,8,9] return  (2-3)+(3-4)+(4-6)+(6-8)+(8-9)
+//E: given [2,3,4,6,8,9] return  (2-3)+(3-4)+(4-6)+(6-8)+(8-9) = -7
+//P: create a function
+//   make function take an array
+         function sumOfDifference(arr){
+            //arrange arr descending order by sorting
+               let sorted = arr.sort((a,b) => b - a)
+            //
+         }
+         
+//?solution from codewars
+// function sumOfDifference(arr){
+//             if(arr.length > 1){
+//                return Math.max(...arr) - Math.min(...arr)
+//             }else {
+//                return 0
+//             }
+//          }
+
+function sumOfDifference(arr){
+   return arr.length > 1 ? Math.max(...arr) - Math.min(...arr) : 0
+}
