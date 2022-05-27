@@ -20,11 +20,7 @@ Your goal in this kata is to determine which phrase the girls would say for a fl
 
 //P:    make function
 //      create an array for the statements
-//      
-
-
-
-
+//
 
 //Build a function that returns an array of integers from n to 1 where n>0.
 
@@ -32,16 +28,17 @@ Your goal in this kata is to determine which phrase the girls would say for a fl
 
 //P: always an integer > 0
 //R: return array of integers with n at index 0 to 1
-//E: 
+//E:
 //      given 7, return [7,6,5,4,3,2,1]
 //      given 4, return [4,3,2,1]
 //P:
 //    create a function
-    const reverseSeq = n => {
-        //make an  empty array
-     let arr = [] 
-       //loop through n while pushing i to arr ( starting array from  n)
-     for(i = n ; i > 0; i--){
-        arr.push(i)
-     } return arr
-    }
+const reverseSeq = n => {
+  //make an  empty array
+  let arr = [];
+  //loop through n while pushing i to arr ( starting array from  n)
+  for (i = n; i > 0; i--) {
+    arr.push(i);
+  }
+  return arr;
+};
