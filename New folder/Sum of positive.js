@@ -14,7 +14,7 @@ E - [1,2,3,4,5] => 15
     [] => 0
     [-2,-3,-7] => 0
 
-P - 
+P - use for loop to check elements that are less than Zero
 */
 function positiveSum(arr) {
   let sum = 0;
